@@ -20,7 +20,7 @@
   <strong>Longitude:</strong>
   <%= @location.longitude %>
 </p>
-
+<img src="https://maps.googleapis.com/maps/api/streetview?location=<%= @location.address %>&size=400x400" >
 <img src="https://maps.googleapis.com/maps/api/staticmap?center=<%= @location.address %>&size=400x400" >
 
 <h2>Nearby Locations</h2>
